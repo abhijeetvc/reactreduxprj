@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import counterApp from './reducer';
 
-const store=createStore()
+const store=createStore(counterApp)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

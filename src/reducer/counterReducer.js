@@ -12,7 +12,7 @@ const counterReducer=(state=100,action)=>{
             return newState= state - action.payload 
 
         default:
-            return newState
+            return state
     }
 
 }
